@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1">
+    <EditText
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:ems="10"
+            android:id="@+id/name" android:layout_gravity="center_horizontal"/>
+    <EditText
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:ems="10"
+            android:id="@+id/password" android:layout_gravity="center_horizontal"/>
+    <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:ems="10"
+            android:id="@+id/editText5"  android:layout_gravity="center_horizontal" android:layout_weight="0.04"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="login"
+            android:id="@+id/login" android:layout_gravity="center_horizontal" android:onClick="onLoginClick"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton" android:layout_gravity="center_horizontal" android:src="@drawable/facebook"
+            android:adjustViewBounds="false" android:background="#ff6a6a6a"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton2" android:layout_gravity="center_horizontal" android:src="@drawable/twitter"
+            android:background="#ff6a6a6a"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton3" android:layout_gravity="center_horizontal" android:src="@drawable/google"
+            android:background="#ff6a6a6a"/>
+</LinearLayout>
+
