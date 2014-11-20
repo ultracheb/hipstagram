@@ -24,9 +24,7 @@ public class PhotoSwipe extends FragmentActivity{
     }
 
     private void init(){
-        mPagerAdapter =
-                new PagerAdapter(
-                        getSupportFragmentManager());
+        mPagerAdapter = new PagerAdapter(getSupportFragmentManager(), 3);
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mPagerAdapter);
     }

@@ -6,17 +6,18 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
-    public PagerAdapter(FragmentManager fm) {
+
+    private int pageCount;
+
+    public PagerAdapter(FragmentManager fm, int pageCount) {
         super(fm);
+        this.pageCount = pageCount;
     }
 
     @Override
     public Fragment getItem(int i) {
         Fragment fragment;
-        if (i == 3 )
-            fragment = new Object2();
-        else
-            fragment = new ObjectFragment();
+        fragment = new ObjectFragment();
 
 
         Bundle args = new Bundle();
@@ -28,7 +29,7 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 5;
+        return pageCount;
     }
 
     @Override
